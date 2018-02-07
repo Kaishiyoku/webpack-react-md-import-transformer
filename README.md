@@ -1,5 +1,5 @@
 # webpack-react-md-import-transformer
-A basic import transformer to enable tree shaking
+A basic import transformer to optimize react-md imports.
 
 Table of contents
 =================
