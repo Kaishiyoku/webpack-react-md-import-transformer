@@ -23,7 +23,7 @@ npm install --save-dev https://github.com/Kaishiyoku/webpack-react-md-import-tra
 const reactMdTransformer = require('webpack-react-md-import-transformer/lib/webpack-react-md-import-transformer.min');
 ```
 4. adjust your js module rule loader to something like that:  
-```
+```js
 {
   test: /\.(js|jsx)$/,
   use: {
