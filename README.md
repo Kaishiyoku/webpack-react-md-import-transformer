@@ -3,10 +3,15 @@ A basic import transformer to enable tree shaking
 
 Table of contents
 =================
+  * [NPM](#npm)
   * [Installation](#installation)
   * [Bugs/Missing components](#bugsmissing-components)
   * [License](#license)
   * [Author](#author)
+
+NPM
+===
+I will add this package to npm as soon as possible. In the meantime you can just install the package from GitHub like I noted in the installation instructions.
 
 Installation
 ============
