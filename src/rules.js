@@ -1,41 +1,318 @@
 const rules = [
-    ['Autocompletes', ['Autocomplete']],
-    ['Avatars', ['Avatar']],
-    ['Badges', ['Badge']],
-    ['BottomNavigations', ['BottomNav', 'BottomNavigation']],
-    ['Buttons', ['Button', 'FlatButton', 'FloatingButton', 'IconButton', 'RaisedButton']],
-    ['Cards', ['Card', 'CardActionOverlay', 'CardActions', 'CardExpander', 'CardMedia', 'CardText', 'CardTitle', 'CardTitleBlock']],
-    ['Chips', ['Chip']],
-    ['DataTables', ['DataTable', 'DropdownMenuColumn', 'EditDialog', 'EditDialogColumn', 'MenuButtonColumn', 'SelectFieldColumn', 'TableBody', 'TableCardHeader', 'TableCheckbox', 'TableColumn', 'TableFooter', 'TableHeader', 'TablePagination', 'TableRow']],
-    ['Dialogs', ['Dialog', 'DialogContainer', 'DialogFooter', 'DialogTitle']],
-    ['Dividers', ['Divider']],
-    ['Drawers', ['Drawer', 'DrawerTypes', 'Overlay']],
-    ['ExpansionPanels', ['ExpansionList', 'ExpansionPanel', 'PanelContent']],
-    ['FABTransitions', ['SpeedDial']],
-    ['FileInputs', ['FileInput', 'FileUpload']],
-    ['FontIcons', ['FontIcon']],
-    ['Grids', ['Cell', 'Grid', 'GridList']],
-    ['Helpers', ['AccessibleFakeButton', 'AccessibleFakeInkedButton', 'Collapse', 'FocusContainer', 'HorizontalAnchors', 'IconSeperator', 'Layover', 'Portal', 'Positions', 'ResizeObserver', 'VerticalAnchors', 'anchorShape', 'fixedToShape', 'positionShape']],
-    ['Inks', ['Ink', 'InkContainer', 'injectInk']],
-    ['Lists', ['List', 'ListItem', 'ListItemControl', 'ListItemText', 'TileAddon']],
-    ['Media', ['Media', 'MediaOverlay']],
-    ['Menus', ['DropdownMenu', 'Menu', 'MenuButton']],
-    ['NavigationDrawers', ['CloseButton', 'JumpToContentLink', 'MiniListItem', 'NavigationDrawer']],
-    ['Papers', ['Paper']],
-    ['Pickers', ['CalendarDate', 'CalendarHeader', 'CalendarMonth', 'ClockFace', 'ClockHand', 'ClockTime', 'DatePicker', 'DatePickerCalendar', 'DatePickerContainer', 'DatePickerHeader', 'PickerControl', 'PickerFooter', 'TimePeriods', 'TimePicker', 'TimePickerContainer', 'TimePickerHeader', 'Year', 'YearPicker']],
-    ['Progress', ['CircularProgress', 'LinearProgress']],
-    ['SVGIcons', ['SVGIcon']],
-    ['SelectFields', ['SelectField', 'SelectFieldInput', 'SelectFieldToggle']],
-    ['SelectionControls', ['Checkbox', 'Radio', 'RadioGroup', 'SelectionControl', 'SelectionControlGroup', 'Switch', 'SwitchThumb', 'SwitchTrack']],
-    ['Sidebars', ['Sidebar']],
-    ['Sliders', ['DiscreteValue', 'Slider', 'SliderLabel', 'Thumb', 'ThumbMask', 'Track', 'TrackFill']],
-    ['Snackbars', [['Snackbar', 'SnackbarContainer'], 'SnackbarContainer']],
-    ['Subheaders', ['Subheader']],
-    ['Tabs', ['MenuTab', 'Tab', 'TabIndicator', 'TabOverflowButton', 'TabPanel', 'Tabs', 'TabsContainer']],
-    ['TextFields', ['FloatingLabel', 'InputField', 'Message', 'PasswordButton', 'TextArea', 'TextField', 'TextFieldDivider', 'TextFieldMessage']],
-    ['Toolbars', ['Toolbar', 'ToolbarTitle']],
-    ['Tooltips', ['Tooltip', 'TooltipContainer', 'Tooltipped', 'injectTooltip']],
-    ['constants', ['CSSTransitionGroupTick', 'additionalInkTriggerKeys', 'keyCodes', 'media']],
+    [
+        'Autocompletes',
+        ['Autocomplete']
+    ],
+    [
+        'Avatars',
+        ['Avatar']
+    ],
+    [
+        'Badges',
+        ['Badge']
+    ],
+    [
+        'BottomNavigations',
+        [
+            'BottomNav',
+            'BottomNavigation',
+        ]
+    ],
+    [
+        'Buttons',
+        [
+            'Button',
+            'FlatButton',
+            'FloatingButton',
+            'IconButton',
+            'RaisedButton',
+        ]
+    ],
+    [
+        'Cards',
+        [
+            'Card',
+            'CardActionOverlay',
+            'CardActions',
+            'CardExpander',
+            'CardMedia',
+            'CardText',
+            'CardTitle',
+            'CardTitleBlock',
+        ]
+    ],
+    [
+        'Chips',
+        ['Chip']
+    ],
+    [
+        'DataTables',
+        [
+            'DataTable',
+            'DropdownMenuColumn',
+            'EditDialog',
+            'EditDialogColumn',
+            'MenuButtonColumn',
+            'SelectFieldColumn',
+            'TableBody',
+            'TableCardHeader',
+            'TableCheckbox',
+            'TableColumn',
+            'TableFooter',
+            'TableHeader',
+            'TablePagination',
+            'TableRow',
+        ]
+    ],
+    [
+        'Dialogs',
+        [
+            'Dialog',
+            'DialogContainer',
+            'DialogFooter',
+            'DialogTitle',
+        ]
+    ],
+    [
+        'Dividers',
+        ['Divider']
+    ],
+    [
+        'Drawers',
+        [
+            'Drawer',
+            'DrawerTypes',
+            'Overlay',
+        ]
+    ],
+    [
+        'ExpansionPanels',
+        [
+            'ExpansionList',
+            'ExpansionPanel',
+            'PanelContent',
+        ]
+    ],
+    [
+        'FABTransitions',
+        ['SpeedDial']
+    ],
+    [
+        'FileInputs',
+        [
+            'FileInput',
+            'FileUpload',
+        ]
+    ],
+    [
+        'FontIcons',
+        ['FontIcon']
+    ],
+    [
+        'Grids',
+        [
+            'Cell',
+            'Grid',
+            'GridList',
+        ]
+    ],
+    [
+        'Helpers',
+        [
+            'AccessibleFakeButton',
+            'AccessibleFakeInkedButton',
+            'Collapse',
+            'FocusContainer',
+            'HorizontalAnchors',
+            'IconSeperator',
+            'Layover',
+            'Portal',
+            'Positions',
+            'ResizeObserver',
+            'VerticalAnchors',
+            'anchorShape',
+            'fixedToShape',
+            'positionShape',
+        ]
+    ],
+    [
+        'Inks',
+        [
+            'Ink',
+            'InkContainer',
+            'injectInk',
+        ]
+    ],
+    [
+        'Lists',
+        [
+            'List',
+            'ListItem',
+            'ListItemControl',
+            'ListItemText',
+            'TileAddon',
+        ]
+    ],
+    [
+        'Media',
+        [
+            'Media',
+            'MediaOverlay',
+        ]
+    ],
+    [
+        'Menus',
+        [
+            'DropdownMenu',
+            'Menu',
+            'MenuButton',
+        ]
+    ],
+    [
+        'NavigationDrawers',
+        [
+            'CloseButton',
+            'JumpToContentLink',
+            'MiniListItem',
+            'NavigationDrawer',
+        ]
+    ],
+    [
+        'Papers',
+        ['Paper']
+    ],
+    [
+        'Pickers',
+        [
+            'CalendarDate',
+            'CalendarHeader',
+            'CalendarMonth',
+            'ClockFace',
+            'ClockHand',
+            'ClockTime',
+            'DatePicker',
+            'DatePickerCalendar',
+            'DatePickerContainer',
+            'DatePickerHeader',
+            'PickerControl',
+            'PickerFooter',
+            'TimePeriods',
+            'TimePicker',
+            'TimePickerContainer',
+            'TimePickerHeader',
+            'Year',
+            'YearPicker',
+        ]
+    ],
+    [
+        'Progress',
+        [
+            'CircularProgress',
+            'LinearProgress',
+        ]
+    ],
+    [
+        'SVGIcons',
+        ['SVGIcon']
+    ],
+    [
+        'SelectFields',
+        [
+            'SelectField',
+            'SelectFieldInput',
+            'SelectFieldToggle',
+        ]
+    ],
+    [
+        'SelectionControls',
+        [
+            'Checkbox',
+            'Radio',
+            'RadioGroup',
+            'SelectionControl',
+            'SelectionControlGroup',
+            'Switch',
+            'SwitchThumb',
+            'SwitchTrack',
+        ]
+    ],
+    [
+        'Sidebars',
+        ['Sidebar']
+    ],
+    [
+        'Sliders',
+        [
+            'DiscreteValue',
+            'Slider',
+            'SliderLabel',
+            'Thumb',
+            'ThumbMask',
+            'Track',
+            'TrackFill',
+        ]
+    ],
+    [
+        'Snackbars',
+        [
+            ['Snackbar', 'SnackbarContainer'],
+            'SnackbarContainer',
+        ]
+    ],
+    [
+        'Subheaders',
+        ['Subheader']
+    ],
+    [
+        'Tabs',
+        [
+            'MenuTab',
+            'Tab',
+            'TabIndicator',
+            'TabOverflowButton',
+            'TabPanel',
+            'Tabs',
+            'TabsContainer',
+        ]
+    ],
+    [
+        'TextFields',
+        [
+            'FloatingLabel',
+            'InputField',
+            'Message',
+            'PasswordButton',
+            'TextArea',
+            'TextField',
+            'TextFieldDivider',
+            'TextFieldMessage',
+        ]
+    ],
+    [
+        'Toolbars',
+        [
+            'Toolbar',
+            'ToolbarTitle',
+        ]
+    ],
+    [
+        'Tooltips',
+        [
+            'Tooltip',
+            'TooltipContainer',
+            'Tooltipped',
+            'injectTooltip',
+        ]
+    ],
+    [
+        'constants',
+        [
+            'CSSTransitionGroupTick',
+            'additionalInkTriggerKeys',
+            'keyCodes',
+            'media',
+        ]
+    ],
 ];
 
 export default rules;
