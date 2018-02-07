@@ -3,15 +3,10 @@ A basic import transformer to optimize react-md imports.
 
 Table of contents
 =================
-  * [NPM](#npm)
   * [Installation](#installation)
   * [Bugs/Missing components](#bugsmissing-components)
   * [License](#license)
   * [Author](#author)
-
-NPM
-===
-I will add this package to npm as soon as possible. In the meantime you can just install the package from GitHub like I noted in the installation instructions.
 
 Installation
 ============
@@ -21,7 +16,7 @@ npm insall --save-dev babel-plugin-transform-imports
 ```
 2. install my **webpack-react-md-import-transformer** package:  
 ```
-npm install --save-dev https://github.com/Kaishiyoku/webpack-react-md-import-transformer/archive/1.0.1.tar.gz
+npm install --save-dev webpack-react-md-import-transformer
 ```
 3. require my package in your webpack.config.js file:  
 ```
