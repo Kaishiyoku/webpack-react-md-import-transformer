@@ -4,7 +4,7 @@ A basic import transformer to enable tree shaking
 Table of contents
 =================
   * [Installation](#installation)
-  * [Bugs/Missing components](#bugsmissingcomponents)
+  * [Bugs/Missing components](#bugs-missingcomponents)
   * [License](#license)
   * [Author](#author)
 
