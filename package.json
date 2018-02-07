@@ -1,6 +1,6 @@
 {
   "name": "webpack-react-md-import-transformer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A basic import transformer to enable tree shaking.",
   "main": "./dist/reactMdTransformer.js",
   "scripts": {
