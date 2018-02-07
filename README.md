@@ -19,7 +19,7 @@ npm insall --save-dev babel-plugin-transform-imports
 npm install --save-dev webpack-react-md-import-transformer
 ```
 3. require my package in your webpack.config.js file:  
-```
+```js
 const reactMdTransformer = require('webpack-react-md-import-transformer/lib/webpack-react-md-import-transformer.min');
 ```
 4. adjust your js module rule loader to something like that:  
