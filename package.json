@@ -1,6 +1,6 @@
 {
   "name": "webpack-react-md-import-transformer",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A basic import transformer to optimize react-md imports.",
   "main": "./dist/reactMdTransformer.js",
   "scripts": {
@@ -8,6 +8,7 @@
     "build:clean": "babel-node --presets es2015 scripts/cleanup-build-dir.js",
     "build:dev": "cross-env NODE_ENV=development webpack",
     "build:prod": "cross-env NODE_ENV=production webpack",
+    "prepublish": "npm run build:clean && npm run build:dev && npm run build:prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
