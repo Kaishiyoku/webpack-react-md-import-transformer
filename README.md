@@ -1,3 +1,6 @@
+[![Version](https://img.shields.io/npm/v/webpack-react-md-import-transformer.svg)](https://www.npmjs.com/package/webpack-react-md-import-transformer) ![npm](https://img.shields.io/npm/dt/webpack-react-md-import-transformer.svg)
+
+
 # webpack-react-md-import-transformer
 A basic import transformer to optimize react-md imports.
 
