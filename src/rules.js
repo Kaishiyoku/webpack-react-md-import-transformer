@@ -212,10 +212,6 @@ const rules = [
         ]
     ],
     [
-        'SVGIcons',
-        ['SVGIcon']
-    ],
-    [
         'SelectFields',
         [
             'SelectField',
@@ -255,13 +251,17 @@ const rules = [
     [
         'Snackbars',
         [
-            ['Snackbar', 'SnackbarContainer'],
+            'Snackbar',
             'SnackbarContainer',
         ]
     ],
     [
         'Subheaders',
         ['Subheader']
+    ],
+    [
+        'SVGIcons',
+        ['SVGIcon']
     ],
     [
         'Tabs',
