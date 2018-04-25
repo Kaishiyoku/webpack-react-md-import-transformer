@@ -7,10 +7,15 @@ A basic import transformer to optimize react-md imports.
 
 Table of contents
 =================
+  * [Important notice](#important-notice)
   * [Installation](#installation)
   * [Bugs/Missing components](#bugsmissing-components)
   * [License](#license)
   * [Author](#author)
+
+Important notice
+================
+Since react-md v1.3 the /es imports have been changed from `react-md/es/react-md` to `react-md/es/index`. Adjust the transform call in your webpack configuration accordingly.
 
 Installation
 ============
@@ -35,7 +40,7 @@ const reactMdTransformer = require('webpack-react-md-import-transformer/lib/webp
       query: {
         plugins: [
           [require('babel-plugin-transform-imports'), {
-            "react-md/es/react-md": {
+            "react-md/es/index": {
               "transform": reactMdTransformer,
               preventFullImport: true
             }
