@@ -5,22 +5,28 @@ import moduleFinder from './moduleFinder';
 function reactMdTransformer(importName) {
     const libPath = 'react-md/lib';
 
-    const modules = flatten(rules.map((rule) => rule[1].map((component) => {
-        if (Array.isArray(component)) {
+    const allModules = flatten(rules.map((rule) => {
+        const [name, ruleModules] = rule;
+
+        return ruleModules.map((component) => {
+            if (Array.isArray(component)) {
+                const [originalCmp, cmp] = component;
+
+                return {
+                    component: cmp,
+                    module: name,
+                    originalComponent: originalCmp,
+                };
+            }
+
             return {
-                component: component[1],
-                module: rule[0],
-                originalComponent: component[0],
+                component,
+                module: name,
             };
-        }
+        });
+    }));
 
-        return {
-            component,
-            module: rule[0],
-        };
-    })));
-
-    const foundModule = modules.find(moduleFinder(importName));
+    const foundModule = allModules.find(moduleFinder(importName));
 
     if (foundModule) {
         return `${libPath}/${foundModule.module}/${foundModule.component}`;
