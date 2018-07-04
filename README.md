@@ -1,8 +1,8 @@
-![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)
- [![Version](https://img.shields.io/npm/v/webpack-react-md-import-transformer.svg)](https://www.npmjs.com/package/webpack-react-md-import-transformer) ![npm](https://img.shields.io/npm/dt/webpack-react-md-import-transformer.svg)
-
-
 # webpack-react-md-import-transformer
+
+[![Build Status](https://travis-ci.org/Kaishiyoku/webpack-react-md-import-transformer.svg?branch=master)](https://travis-ci.org/Kaishiyoku/webpack-react-md-import-transformer)
+[![npm version](https://badge.fury.io/js/webpack-react-md-import-transformer.svg)](https://www.npmjs.com/package/webpack-react-md-import-transformer)
+
 A basic import transformer to optimize react-md imports.
 
 Table of contents
