@@ -1,6 +1,6 @@
 import rules from './rules';
-import flatten from './flatten';
-import moduleFinder from './moduleFinder';
+import flatten from './helpers/flatten';
+import moduleFinder from './helpers/moduleFinder';
 
 function reactMdTransformer(importName) {
     const libPath = 'react-md/lib';
