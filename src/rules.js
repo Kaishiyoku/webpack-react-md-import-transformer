@@ -212,6 +212,10 @@ const rules = [
         ]
     ],
     [
+        'SVGIcons',
+        ['SVGIcon']
+    ],
+    [
         'SelectFields',
         [
             'SelectField',
@@ -258,10 +262,6 @@ const rules = [
     [
         'Subheaders',
         ['Subheader']
-    ],
-    [
-        'SVGIcons',
-        ['SVGIcon']
     ],
     [
         'Tabs',
